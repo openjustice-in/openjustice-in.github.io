@@ -1,72 +1,128 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta content="text/html; charset=utf-8" http-equiv="content-type">
-  <title>Open Justice India</title>
-  <meta content="width=device-width, initial-scale=1" name="viewport">
-  <link rel="stylesheet" href="https://necolas.github.io/normalize.css/latest/normalize.css" type="text/css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sakura.css/css/sakura.css" type="text/css">
-</head>
-<body>
-<main>
-  <section><article>
-    <header><h1><img class=icon src="icon.png">Open Justice India</h1></header>
+  <head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type">
+    <title>Open Justice India</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/latest/normalize.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sakura.css/css/sakura.css" type="text/css" />
     <style>
-    img.icon {
-      width: 1.5em;
-      height: 1.5em;
-      display: inline;
-      margin: 0;
-    }
-    a.badge:hover{
-      text-decoration: none;
-      border-bottom: 0px;
-    }
-    .badge img{
-      margin-bottom: 0;
-    }
+      img.icon {
+        width: 1.5em;
+        height: 1.5em;
+        display: inline;
+        margin: 0;
+      }
+      a.badge:hover{
+        text-decoration: none;
+        border-bottom: 0px;
+      }
+      .badge img, dt img{
+        margin-bottom: 0;
+      }
     </style>
+  </head>
+  <body>
+    <main>
+      <section>
+        <article>
+          <header>
+            <h1>
+            <img class=icon src="icon.png">Open Justice India</h1>
+          </header>
+          <a class=badge href="https://github.com/openjustice-in/">
+          <img alt="GitHub Badge" src="https://img.shields.io/badge/github-grey"></a>
+          <a class=badge href="https://groups.io/g/open-justice-in">
+          <img alt="Mailing List Badge" src="https://img.shields.io/badge/Mailing_List-join-blue"></a>
+          <a class=badge href="https://pypi.org/project/ecourts/">
+          <img alt="PyPi Badge for ecourts" src="https://img.shields.io/pypi/v/ecourts"></a>
+          <h2>About Us</h2>
+          <p>Open Justice - India is a project to open up law datasets in India. This includes, but is not limited to:</p>
+          <ul>
+            <li>Court Judgements and Orders, across all levels (Supreme Court, High Courts, District Courts).</li>
+            <li>Structure Case Data about cases.</li>
+            <li>Causes Lists, and Hearing data, about what cases are heard when.</li>
+            <li>Orders and Judgements in Plain Text.</li>
+            <li>Indic Language support.</li>
+          </ul>
+          
+          <p> This project aims to publish this data across all court levels
+          continually on a cadence - akin to how Common Crawl does a monthly
+          release. If you are interested in this effort, please <a
+          href="https://groups.io/g/open-justice-in">join the mailing
+          list</a> and introduce yourselves. </p>
 
-    <a class=badge href="https://github.com/openjustice-in/"><img  alt="GitHub Badge" src="https://img.shields.io/badge/github-grey"></a> <a class=badge href="https://groups.io/g/open-justice-in"><img  alt="Mailing List Badge" src="https://img.shields.io/badge/Mailing_List-join-blue"></a> <a class=badge href="https://pypi.org/project/ecourts/"><img alt="PyPi Badge for ecourts" src="https://img.shields.io/pypi/v/ecourts"></a>
-<h2>About Us</h2>
-<p>Open Justice - India is a project to open up law datasets in India. This includes, but is not limited to:</p>
- 
-<ul>
-<li>Court Judgements and Orders, across all levels (Supreme Court, High Courts, District Courts).</li>
-<li>Structure Case Data about cases.</li>
-<li>Causes Lists, and Hearing data, about what cases are heard when.</li>
-<li>Orders and Judgements in Plain Text.</li>
-<li>Indic Language support.</li>
-</ul>
- 
-<p>Many interfaces to search for this data already exist, such as India Kanoon, 
-Judicial Data Grid, or Judgements Search, there aren't any "complete-datasets"
-that one can download or play around on something like BigQuery. The closest we have
-to this is the <a href="https://www.devdatalab.org/judicial-data">Judicial Data project by Development Data Labs</a>
-which covers "77 million case records from the Indian eCourts platform from 2010-2018".</p>
- 
-<p>This project aims to do the same across all court levels continually - and publish
-datasets on a regular basis - akin to how Common Crawl does a monthly release. If
-you are interested in this effort, please
-<a href="https://groups.io/g/open-justice-in">join the mailing list</a> and introduce yourselves.</p>
+          <h2>Join</h2>
+          <ol>
+            <li>Join the
+              <a href="https://groups.io/g/open-justice-in">mailing list</a> and introduce yourselves.
+            </li>
+            <li>We have a
+              <a href="https://signal.group/#CjQKIEaLkrWjm34HWkq4gCVAWRppAIYvJhszY1Q4u0OkYwl1EhC67Bthvx4F23rmTEzFPhdF">Signal Group</a>for quick communications
+            </li>
+          </ol>
+          <h2>Our Projects</h2>
+          <h3>
+          <a href="https://github.com/openjustice-in/ecourts">ecourts</a>
+          </h3>
+          <p>Python library to help scrape Indian Court Orders from the ecourts website. Published on
+            <a href="https://pypi.org/project/ecourts/">PyPi</a>. Under active development.
+          </p>
+          <h2>Also See</h2>
+          
+          <p>This is not the first attempt at opening up Indian Legal data,
+          there's a bunch of such efforts already. This is a collaborative
+          project, and we seek to build on the existing body of work by these
+          many institutions.</p>
 
-<h2>Join</h2>
+          <dl>
+            <dt><a href="https://indiajusticereport.org/about">India Justice Report</a></dt>
+            <dd>The India Justice Report is a national periodic reporting that attempts to measure the capacity of four pillars of the justice system - the police, the prison system, the judiciary and legal aid—in each state, against its own declared standards or benchmarks.</dd>
+            
+            <dt><a href="https://justicehub.in/">Justice Hub</a> by CivicDataLab, build via the <a href="https://agami.in/d4j/">Agami Data for Justice Challenge 2019</a>
+            <dd>An open source platform for data related to the Indian legal and justice system. Crowdsourced from a community of law and data researchers, practitioners and enthusiasts.</dd>
+            
+            <dt>
+              <a href="https://www.devdatalab.org/judicial-data">Judicial Dataset</a> by <a href="https://www.devdatalab.org/">Development Data Labs</a> <img alt="Static Badge" src="https://img.shields.io/badge/license-ODbL--1.0-purple"></dt>
+            <dd>A public dataset describing 81 million case records from the Indian e-Courts platform. It covers India's lower judiciary -- all courts including and under the jurisdiction of District and Sessions courts. Built for a paper on evidence of Judicial Bias, for which 5 Million of these cases were used.</dd>
 
-<ol>
-  <li>Join the <a href="https://groups.io/g/open-justice-in">mailing list</a> and introduce yourselves.</li>
-  <li>We have a <a href="https://signal.group/#CjQKIEaLkrWjm34HWkq4gCVAWRppAIYvJhszY1Q4u0OkYwl1EhC67Bthvx4F23rmTEzFPhdF">Signal Group</a> for quick communications</li>
-</ol>
+            <dt><a href="https://www.dakshindia.org/daksh-high-court-data/#opendata">DAKSH High Court Data</a> <img alt="Static Badge" src="https://img.shields.io/badge/license-CC--BY--NC--4.0-purple"></dt>
 
-<h2>Projects</h2>
+            <dd>Case and hearing records for 23 out of 25 High Courts across
+            India scraped through the eCourts app. A subset of data from six High Courts over a
+            10-year period was published. They've written about their <a
+            href="https://www.dakshindia.org/wp-content/uploads/2022/03/DAKSH-High-Court-Data-Preparation-Note.pdf">preparation
+            note</a> and how they tagged <a
+            href="https://www.dakshindia.org/deciphering-judicial-data-daksha-database/">Criminal/Civil</a>
+            cases.
 
-<h3><a href="https://github.com/openjustice-in/ecourts">ecourts</a></h3>
-<p>Python library to help scrape Indian Court Orders from the ecourts website. Published on <a href="https://pypi.org/project/ecourts/">PyPi</a>. WIP</p>
+            <blockquote>Note: The dataset is behind a form submission, which
+            fails so this is inaccessible currently.</blockquote>
 
-</main>
-</section></article>
-<hr>
-<footer>
-  <p>Project by <a href="https://captnemo.in">Nemo</a>. Icon by <a href="https://www.iconfinder.com/icons/9151169/judgement_order_court_justice_law_document_legal_icon">amoghdesign</a>. <a href="https://github.com/openjustice-in/openjustice-in.github.io">Website Source</a> on GitHub. <a href="https://oxal.org/projects/sakura/">Sakura</a> theme by Mitesh.
-</footer>
-</body>
+            </dd>
+
+            <dt><a href="https://aclanthology.org/2021.acl-long.313/">Indian Legal Documents Corpus for <abbr title="Court Judgment Prediction and Explanation">CJPE</abbr></a> <img alt="Static Badge" src="https://img.shields.io/badge/license-CC--BY--NC--4.0-purple"></dt>
+            <dd>The ILDC dataset (Indian Legal Documents Corpus) is a large corpus of 35k Indian Supreme Court cases annotated with original court decisions. Made up primarily by a India Kanoon scrape. Available for Research and non-commercial purposes. </dd>
+            </dd>
+
+            <dt><a href="https://judicialdatacollaborative.in">Judicial Data
+            Collaborative</a></dt> <dd>JDC aims to drive and sustain advocacy
+            on the quality and limitations of Indian judicial data and engage
+            the judicial data community to enable cross-learning among
+            various projects. In particular, they maintain a <a href="https://judicialdatacollaborative.in/data-project-explorer/">listing of various Judicial Data Projects in India</a> and a <a href="https://jdc-definitions.wikibase.wiki/wiki/Main_Page">Judicial Data Wiki for definitions and taxonomies</a>.</dd>
+          </dl>
+
+        </article>
+      </section>
+      <hr>
+    </main>
+    <footer>
+      <p>Project by
+        <a href="https://captnemo.in">Nemo</a>. Icon by
+        <a href="https://www.iconfinder.com/icons/9151169/judgement_order_court_justice_law_document_legal_icon">amoghdesign</a>.
+        <a href="https://github.com/openjustice-in/openjustice-in.github.io">Website Source</a> on GitHub.
+        <a href="https://oxal.org/projects/sakura/">Sakura</a> theme by Mitesh.
+      </p>
+    </footer>
+  </body>
 </html>
